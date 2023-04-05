@@ -22,7 +22,7 @@ const IconType = ({ type, size='' }) => {
     */
   return (
     <div className={`icon-type ${type} ${size}`}> 
-        <img src={ image } alt={`icon ${type}`} title={type} />
+        <img src={require(`${BASE_URL}/${type}.svg`)} alt={`icon ${type}`} title={type} />
     </div>
   )
 }
