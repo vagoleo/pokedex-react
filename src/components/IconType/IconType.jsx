@@ -4,10 +4,12 @@ import './IconType.css'
 
 const IconType = ({ type, size='' }) => {
 
-  console.log('changed')
+  const BASE_URL = '/src/assets/icons/types'
+  const image = import(`${BASE_URL}/${type}.svg`);
 
+  /*
     const [icon, setIcon] = useState('');
-
+    
     const fetchImage = async(type) => {
         const BASE_URL = '/src/assets/icons/types'
         const image = await import(`${BASE_URL}/${type}.svg`);
@@ -17,10 +19,10 @@ const IconType = ({ type, size='' }) => {
     useEffect(() => {
         fetchImage(type);
     }, [])
-
+    */
   return (
     <div className={`icon-type ${type} ${size}`}> 
-        <img src={ `/assets/${type}.svg` } alt={`icon ${type}`} title={type} />
+        <img src={ image } alt={`icon ${type}`} title={type} />
     </div>
   )
 }
