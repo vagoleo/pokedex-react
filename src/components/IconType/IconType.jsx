@@ -4,6 +4,8 @@ import './IconType.css'
 
 const IconType = ({ type, size='' }) => {
 
+  console.log('changed')
+
     const [icon, setIcon] = useState('');
 
     const fetchImage = async(type) => {
