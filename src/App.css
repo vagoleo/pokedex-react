@@ -151,6 +151,10 @@ h2 { font-size: var(--size-600); }
 h3 { font-size: var(--size-500); }
 h4 { font-size: var(--size-450); }
 
+@media (max-width: 480px) {
+  h3 { font-size: var(--size-400); }
+}
+
 .p-sm { font-size: var(--size-300); }
 
 section { padding: var(--size-800) 0; }
@@ -220,7 +224,7 @@ section { padding: var(--size-800) 0; }
 
 @media (max-width: 560px) {
     .grid,
-    .grid.evolutions { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); grid-gap: 8px 24px; }
+    .grid.evolutions { grid-template-columns: 1fr 1fr; grid-gap: 8px 12px;  }
 }
 
 header {

@@ -13,7 +13,7 @@ const PokemonCard = ({pokemon, disabled}) => {
     <div className={`card ${state}`}>
       <Link to={`/pokemon/${pokemon.id}`}>
         <div className='card-content'>
-          <img className='card-img' src={ pokemon.sprites.other['official-artwork'].front_default } alt={pokemon.name} loading='lazy' />
+          <img className='card-img' src={ pokemon.sprites.other['official-artwork'].front_default } alt={pokemon.name} loading='lazy' width='230' />
           <h3>{`${pokemon.id}. ${capitalize(pokemon.name)}` }</h3>
           { pokemon.types.map(type => <IconType type={type.type.name} key={type.type.name} />) }
         </div>

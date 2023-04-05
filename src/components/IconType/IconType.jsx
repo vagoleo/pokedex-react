@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useEffect } from 'react';
 import './IconType.css'
-
+ 
 const IconType = ({ type, size='' }) => {
 
   const BASE_URL = '/src/assets/icons/types'
