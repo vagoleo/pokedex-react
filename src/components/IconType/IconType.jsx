@@ -1,0 +1,26 @@
+import React, { useState } from 'react'
+import { useEffect } from 'react';
+import './IconType.css'
+
+const IconType = ({ type, size='' }) => {
+
+    const [icon, setIcon] = useState('');
+
+    const fetchImage = async(type) => {
+        const BASE_URL = '../../assets/icons/types'
+        const image = await import(`${BASE_URL}/${type}.svg`);
+        setIcon(image.default);
+    }
+
+    useEffect(() => {
+        fetchImage(type);
+    }, [])
+
+  return (
+    <div className={`icon-type ${type} ${size}`}> 
+        <img src={ icon } alt={`icon ${type}`} title={type} />
+    </div>
+  )
+}
+
+export default IconType

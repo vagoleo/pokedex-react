@@ -1,0 +1,40 @@
+.card {
+    position: relative;
+}
+
+.card::before { 
+    display: block;
+    content: '';
+    border-radius: 16px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    width: 100%;
+    height: 65%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+    /* From https://css.glass */
+    background: var(--clr-primary-300);
+}
+
+.card a { display: block; height: 100%; }
+
+.card-content {
+    padding: 16px 16px 24px;
+    position: relative;
+    text-align: center;
+}
+
+.card .card-img { transition: all .3s; }
+.card:hover .card-img { transform: scale(1.1); }
+
+.card.disabled {
+    filter: grayscale(.2);
+    opacity: .4;
+    pointer-events: none;
+    user-select: none;
+}
+
+@media (max-width: 480px) {
+    .card-content { padding: 10px 10px 16px; }
+}

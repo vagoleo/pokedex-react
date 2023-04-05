@@ -1,0 +1,35 @@
+.btn {
+    display: inline-block;
+    padding: 12px 14px;
+    border-radius: 6px;
+    font-weight: bold;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    text-align: center;
+    outline: none;
+    border: 2px solid;
+    cursor: pointer;
+    transition: all .25s ease-out;
+    min-width: 150px;
+}
+
+.btn.primary {
+    color: #fff;
+    background-color: var(--clr-accent-400);
+    border-color: var(--clr-accent-400);
+}
+
+.btn.primary:hover {
+    background-color: var(--clr-accent-600);
+    border-color: var(--clr-accent-600);
+}
+
+.btn img {
+    height: 1.2em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media (max-width: 480px){
+    .btn { display: block; width: 100%; }
+}
