@@ -37,4 +37,5 @@
 
 @media (max-width: 480px) {
     .card-content { padding: 10px 10px 16px; }
+    .card .card-img { margin-bottom: 8px; }
 }
