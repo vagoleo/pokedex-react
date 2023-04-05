@@ -7,7 +7,7 @@ const IconType = ({ type, size='' }) => {
     const [icon, setIcon] = useState('');
 
     const fetchImage = async(type) => {
-        const BASE_URL = '../../assets/icons/types'
+        const BASE_URL = 'src/assets/icons/types'
         const image = await import(`${BASE_URL}/${type}.svg`);
         setIcon(image.default);
     }
