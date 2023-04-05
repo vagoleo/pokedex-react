@@ -59,6 +59,7 @@
 .steel    { --color: var(--steel); }
 .water    { --color: var(--water); }
 
+#shadow-host-companion { padding: 0; }
 /* ================================================================= RESET */
 /* Modern CSS Reset by Andy Bell => https://piccalil.li/blog/a-modern-css-reset/ */
 
