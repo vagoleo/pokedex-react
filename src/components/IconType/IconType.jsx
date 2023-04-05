@@ -20,7 +20,7 @@ const IconType = ({ type, size='' }) => {
 
   return (
     <div className={`icon-type ${type} ${size}`}> 
-        <img src={ `${BASE_URL}/${type}.svg` } alt={`icon ${type}`} title={type} />
+        <img src={ `/src/assets/icons/types/${type}.svg` } alt={`icon ${type}`} title={type} />
     </div>
   )
 }
